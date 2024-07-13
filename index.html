@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- judul situs web -->
+    <title>IMDB WEB</title>
+    <!-- favicon -->
+    <link rel="stylesheet" href="Assets\IMDB_Logo.png">
+    <!-- link icon fontawesome -->
+    <script src="https://kit.fontawesome.com/6f38b70ccc.js" crossorigin="anonymous"></script>
+    <!-- link css style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="movie-assets\favicon.jpg" type="image/x-icon" >
+</head>
+<!-- badan halaman dimulai -->
+<body>
+    <!-- ini adalah div utama dari situs web -->
+    <div id="main">
+        <!-- ini adalah bagian header -->
+        <div id="header">
+            <!-- ini adalah logo situs IMDb dalam bentuk gambar -->
+            <div id="logodiv">
+                <span class="movie-name">Movie</span>
+                <span class="movie-name">Box</span>
+            </div>
+
+            <!-- ini adalah bagian pencarian -->
+            <div id="search-bar">
+                <div class="search-content">
+                    <div id="search-area">
+                        <!-- ini adalah area input untuk mencari film -->
+                        <input type="text" name="searchMovie" id="searchMovie" placeholder="Search Movies">
+                    </div>
+                    <!-- di sini hasil pencarian akan ditampilkan -->
+                    <!-- <div class="results">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+            <!-- ini adalah bagian kanan header di mana film favorit ditampilkan -->
+            <div id="right-section">
+                <button id="my-list">
+                    <!-- link untuk pergi ke bagian favorit -->
+                    <a href="./myfav.html">My Favorite</a>
+                </button>
+            </div>
+        </div>
+        <!-- ini adalah kontainer film di mana semua film ditampilkan -->
+        <div id="movie-container">
+            <div class="movie-element"></div>
+        </div>
+    </div>
+
+    <!-- ini adalah tombol berikutnya dan sebelumnya untuk pergi ke halaman berikutnya -->
+    <div class="page-navigation">
+        <button id="prev-page">Sebelumnya</button>
+        <button id="next-page">Berikutnya</button>
+    </div>
+    <!-- bagian footer berakhir di sini -->
+    <!-- javascript untuk halaman utama dihubungkan di sini -->
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>

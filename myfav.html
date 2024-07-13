@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fav Movies</title>
+
+    <!-- link untuk ikon font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <!-- link untuk style halaman film favorit -->
+    <link rel="stylesheet" href="myfav.css">
+  </head>
+  <body>
+    <!-- ini adalah bagian header -->
+    <div id="heading">
+      <!-- ini adalah tombol kembali untuk pergi ke halaman utama -->
+      <button id="home">
+        <a href="./index.html"><i class="fas fa-chevron-left"></i></a>
+      </button>
+      <!-- judul situs web -->
+      <span class="my-fav-heading">My Favourite List</span>
+      <!-- tombol untuk menghapus semua film favorit -->
+      <div id="btns">
+        <button id="clear-whole-list">Clear All</button>
+      </div>
+    </div>
+    <!-- semua film akan ditampilkan di sini -->
+    <div id="list-container"></div>
+    <!-- javascript untuk halaman favorit dihubungkan di sini -->
+    <script src="myfav.js"></script>
+  </body>
+</html>
